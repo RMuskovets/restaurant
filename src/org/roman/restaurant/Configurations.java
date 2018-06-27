@@ -6,5 +6,5 @@ package org.roman.restaurant;
  */
 public class Configurations {
 
-    private int selectedTable = -1;
+    private Table selectedTable;
 }
