@@ -17,16 +17,15 @@ public class Table {
         this.index = index;
     }
 
-    public boolean use() {
+    public void use() {
         if (!used) used = true;
-        else return false;
-        return true;
     }
 
-    public boolean unuse() {
-        if (used) used = false;
-        else return true;
-        return false;
+    public void unuse() {
+        if (used) {
+            used = false;
+            foods.clear();
+        }
     }
 
     public boolean isUsed(){
